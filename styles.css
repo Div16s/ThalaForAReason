@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-image: url("BG.png");
+    background-position: center;
+    height: 88vh;
+    font-family: 'Montserrat', sans-serif;
+    /* background-color: rgb(35, 35, 35); */
+}
+
+#heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    text-align: center;
+    margin-top: 100px;
+}
+
+input, button {
+    padding: 10px;
+    margin: 5px;
+}
+
+/* #inputBox{
+    width: 28%;
+} */
+
+#inputBox {
+    width: 29%; /* Make the input box take 100% width of its container */
+   
+    box-sizing: border-box; /* Include padding and border in the total width */
+    border: 1px solid #f9f7f7; /* Add a 1px solid border */
+    border-radius: 5px; /* Add border-radius for rounded corners */
+    font-size: 14px; /* Set the font size */
+}
+
+/* Optional: Add focus styles */
+#inputBox:focus {
+    border-color: #3498db; /* Change border color on focus */
+    outline: none; /* Remove the default focus outline */
+}
+
+#submitButton {
+    padding: 10px 20px; /* Adjust padding for better appearance */
+    background-color: #3498db; /* Set background color */
+    color: #fff; /* Set text color */
+    font-weight: bold;
+    border: none; /* Remove border */
+    border-radius: 5px; /* Add border-radius for rounded corners */
+    cursor: pointer; /* Add a pointer cursor on hover */
+    transition: background-color 0.3s; /* Add a smooth transition effect for background color */
+}
+
+#submitButton:hover {
+    background-color: #2980b9; /* Change background color on hover */
+}
+
+#result {
+    display: none;
+    text-align: center;
+}
+
+#displayText{
+    color: white;
+}
+
+#backgroundVideo {
+    width: 70%;
+    height: 520px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 600px) {
+    #inputBox {
+        width: 80%; /* Adjust input width for smaller screens */
+    }
+}
+

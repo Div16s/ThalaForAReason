@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <title>ThalaForAReason</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- <h1 id="heading">Behind everything, there's an ultimate reason!</h1> -->
+    <div class="container">
+        <input type="text" id="inputBox" placeholder="Type anything here, and let's find out if there's a reason behind it...">
+        <button id="submitButton" onclick="checkInput()">Find Reason</button>
+    </div>
+
+    <div id="result" class="hidden">
+        <h2 id="displayText"></h2>
+        <video id="backgroundVideo" preload="auto"></video>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
